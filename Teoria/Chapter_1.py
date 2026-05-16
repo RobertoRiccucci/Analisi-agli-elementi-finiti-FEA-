@@ -40,6 +40,6 @@ print(f"il vettore Phf scritto in base \phi_i è: {Phf}")
 asse_x = np.linspace(x_a, x_b, 1000)
 
 plt.plot(asse_x, f(asse_x), label = "$f(x) = \\sin(x)$")
-plt.errorbar(H, Phf, fmt=".", label = "$Phf_{coeff}$")
+plt.errorbar(H, Phf, fmt = ".",label = "$Phf_{coeff}$")
 plt.legend()
 plt.show()
