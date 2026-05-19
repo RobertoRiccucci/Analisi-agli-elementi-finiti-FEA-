@@ -1,7 +1,6 @@
 # FEM — Equazione di Laplace con condizioni di Dirichlet
 
-Implementazione didattica del Metodo degli Elementi Finiti per la risoluzione
-dell'equazione di Laplace con condizioni al contorno di Dirichlet.
+Implementazione didattica del Metodo degli Elementi Finiti per la risoluzione dell'equazione di Laplace con condizioni al contorno di Dirichlet.
 
 ## Struttura
 
@@ -11,4 +10,4 @@ dell'equazione di Laplace con condizioni al contorno di Dirichlet.
 ## Requisiti
 
 - Python 3.x
-- NumPy, Matplotlib, Jupyter
+- NumPy, Matplotlib, pygmsh, Jupyter
