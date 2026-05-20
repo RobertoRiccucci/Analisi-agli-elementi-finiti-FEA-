@@ -23,7 +23,7 @@ cA, cB, cC, cD, cE = np.random.uniform(-1, 1, 5)
 def g_D(x, y):
     return cA*x + cB*y + cC*np.cos(np.pi*x) + cD*np.sin(np.pi*y) + cE*np.exp(x*y) # formula a caso
 
-# Densità di carica (doppio dipolo)
+# Densità di carica
 def rho(x, y):
     sigma = 0.05
     x1, y1 = -0.3, 0.0   # carica positiva
@@ -31,8 +31,7 @@ def rho(x, y):
     Q = 1.0
     g1 = np.exp(-((x-x1)**2 + (y-y1)**2) / (2*sigma**2))
     g2 = np.exp(-((x-x2)**2 + (y-y2)**2) / (2*sigma**2))
-    eps_0 = 8.85 * 10**(-12)
-    return Q / (2*np.pi*sigma**2 * eps_0) * (g1 - g2)
+    return Q / (2*np.pi*sigma**2) * (g1 - g2)
 
 # Generazione della mesh
 with pygmsh.geo.Geometry() as geom:
