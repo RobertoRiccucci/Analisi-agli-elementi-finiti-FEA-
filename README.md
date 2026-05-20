@@ -1,4 +1,4 @@
-# FEM — Equazione di Laplace con condizioni di Dirichlet
+# FEM — Equazione di Poisson con condizioni di Dirichlet
 
 Implementazione didattica del Metodo degli Elementi Finiti per la risoluzione dell'equazione di Poisson con condizioni al contorno di Dirichlet.
 
